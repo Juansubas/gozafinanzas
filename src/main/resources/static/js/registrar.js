@@ -1,5 +1,7 @@
 if(localStorage.token != ""){
     alert("Por Favor cierre Sesión");
+    document.getElementById('formulario').remove();
+    document.querySelector('.login-registro').innerHTML = '<h2>Por Favor <a href="#" onclick="salir()">Cierre Sesión</a><h2>';
 }
 
 async function registrarUsuarios(evt) {

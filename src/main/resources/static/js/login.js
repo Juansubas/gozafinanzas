@@ -1,3 +1,9 @@
+if(localStorage.token != ""){
+    alert("Por Favor cierre Sesión");
+    document.getElementById('formulario').remove();
+    document.querySelector('.login').innerHTML = '<h2>Por Favor <a href="#" onclick="salir()"">Cierre Sesión</a><h2>';
+}
+
 async function iniciarSesion(evt) {
     evt.preventDefault()
 
@@ -19,10 +25,6 @@ async function iniciarSesion(evt) {
     });
 
     const respuesta = await request.text();
-
-    if(localStorage.token != ""){
-        alert("Por Favor cierre Sesión");
-    }
 
     if (respuesta == "FAIL") {
     //para guardar el token es en el almacenamiento local
