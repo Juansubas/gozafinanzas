@@ -1,7 +1,7 @@
 if(localStorage.email == "" && localStorage.token == ""){
     alert("Por Favor Inicie Sesión");
     document.getElementById('table').remove();
-    document.querySelector('h2').outerHTML = '<h2>Por Favor <a href="login.html">Inicie Sesión</a><h2>';
+    document.querySelector('h2').outerHTML = '<h2>Por Favor <a href="index.html">Inicie Sesión</a><h2>';
 } else {
     cargarUsuarios();
 };
