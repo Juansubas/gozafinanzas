@@ -9,7 +9,6 @@ async function registrarMovimientos(evt) {
     const form = evt.target
     
     let datos = {};
-    alert(form.nombre.value);
     datos.nombre = form.nombre.value ;
     datos.fecha = form.fecha.value ;
     datos.monto = form.monto.value ;
