@@ -1,3 +1,7 @@
+if(localStorage.token != ""){
+    alert("Por Favor cierre Sesión");
+}
+
 async function registrarUsuarios(evt) {
     evt.preventDefault()
     const form = evt.target

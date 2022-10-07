@@ -20,7 +20,11 @@ async function iniciarSesion(evt) {
 
     const respuesta = await request.text();
 
-    if (respuesta == "FAIL" || localStorage.token != "") {
+    if(localStorage.token != ""){
+        alert("Por Favor cierre Sesión");
+    }
+
+    if (respuesta == "FAIL") {
     //para guardar el token es en el almacenamiento local
         alert("Las Credenciales son incorrectas. Por favor intente nuevamente");
     }else {
